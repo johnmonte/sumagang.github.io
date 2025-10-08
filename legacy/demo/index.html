@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://preline.co/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Perfect for showcasing professional background in a CV/Resume format, highlighting skills, experiences, and achievements.">
+
+  <meta name="twitter:site" content="@preline">
+  <meta name="twitter:creator" content="@preline">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Personal Tailwind CSS Template | Preline UI, crafted with Tailwind CSS">
+  <meta name="twitter:description" content="Perfect for showcasing professional background in a CV/Resume format, highlighting skills, experiences, and achievements.">
+  <meta name="twitter:image" content="https://preline.co/assets/img/og-image.png">
+
+  <meta property="og:url" content="https://preline.co/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Preline">
+  <meta property="og:title" content="Personal Tailwind CSS Template | Preline UI, crafted with Tailwind CSS">
+  <meta property="og:description" content="Perfect for showcasing professional background in a CV/Resume format, highlighting skills, experiences, and achievements.">
+  <meta property="og:image" content="https://preline.co/assets/img/og-image.png">
+
+  <!-- Title -->
+  <title>Monte Legacy</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!-- Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+  <!-- Theme Check and Update -->
+  <script>
+    const html = document.querySelector('html');
+    const isLightOrAuto = localStorage.getItem('hs_theme') === 'light' || (localStorage.getItem('hs_theme') === 'auto' && !window.matchMedia('(prefers-color-scheme: dark)').matches);
+    const isDarkOrAuto = localStorage.getItem('hs_theme') === 'dark' || (localStorage.getItem('hs_theme') === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+    if (isLightOrAuto && html.classList.contains('dark')) html.classList.remove('dark');
+    else if (isDarkOrAuto && html.classList.contains('light')) html.classList.remove('light');
+    else if (isDarkOrAuto && !html.classList.contains('dark')) html.classList.add('dark');
+    else if (isLightOrAuto && !html.classList.contains('light')) html.classList.add('light');
+  </script>
+
+  <!-- CSS HS -->
+  <link rel="stylesheet" href="https://preline.co/assets/css/main.css?v=3.0.1">
+  <link rel="stylesheet" href="style.css?v=1.0.0">
+</head>
+
+<body class="dark:bg-neutral-900">
+  <!-- ========== HEADER ========== -->
+   <header>
+    <nav x-scroll-to-header="" class="top-0 m-auto px-3 py-3 flex absolute z-90 w-full items-center justify-between sm:px-8 sm:py-4 border-b border-gray-200 dark:border-neutral-700">
+      <div class="min-[375px]:gap-4 flex items-center justify-start gap-2 lg:flex-1">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsumagang.top" class="flex justify-center items-center size-7 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Facebook">
+          <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v13"></path><path d="m16 6-4-4-4 4"></path><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="md:flex">
+        <img src="brandmark.svg" class="h-8 w-auto" alt="Monte Legacy">
+      </div>
+      <div class="md:flex md:justify-end lg:flex-1">
+        <!-- Dark Mode -->
+        <button type="button" class="hs-dark-mode hs-dark-mode-active:hidden relative flex justify-center items-center size-7 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" data-hs-theme-click-value="dark">
+          <span class="sr-only">Dark</span>
+          <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+        <button type="button" class="hs-dark-mode hs-dark-mode-active:flex hidden relative flex justify-center items-center size-7 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" data-hs-theme-click-value="light">
+          <span class="sr-only">Light</span>
+          <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+        </button>
+        <!-- End Dark Mode -->
+      </div>
+    </nav>
+    </header>
+  <!-- ========== END HEADER ========== -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content">
+    <div class="w-full max-w-2xl mx-auto px-6 py-24">
+      <div class="mx-auto flex flex-col gap-1 text-center pt-8 lg:px-8">
+        <h3 class="text-lg serif tracking-wider text-gold">In memory of</p>
+        <h2 class="text-black dark:text-white text-2xl font-bold uppercase">Nestor Nacario</h2>
+      </div>
+      <div class="mx-auto pt-12 px-4 flex flex-col md:flex-row content-center justify-center gap-1 w-full text-center lg:px-8">
+        <h2 class="text-black dark:text-white text-5xl text-right number self-center md:block hidden">1965</h2>
+        <div class="size-64 aspect-2/3 group block relative self-center rounded-full mx-5 ring-1 ring-white dark:ring-neutral-900 overflow-hidden">
+          <img class="w-full h-full max-w-64 min-h-96 object-cover" src="img2.png">
+        </div>
+        <h2 class="text-black dark:text-white text-5xl text-left number self-center md:block hidden">2025</h2>
+        <h2 class="text-black dark:text-white text-2xl text-center font-bold self-center md:hidden block pt-4">1965 — 2025</h2>
+      </div>
+    </div>
+    <div class="w-full max-w-2xl mx-auto pt-0 px-6 py-24">
+      <div class="mx-auto flex flex-col gap-1 text-center lg:px-8 lg:py-8">
+        <h3 class="text-lg serif tracking-wider text-gold">Remembering Nestor</p>
+        <h2 class="text-black dark:text-white text-2xl leading-1 font-bold">This tribute was created in memory of our loving friend, husband, father and grandfather.</h2>
+      </div>
+    </div>
+    <div class="w-full max-w-2xl mx-auto pt-0 px-6 py-24">
+      <div class="mx-auto flex flex-col gap-1 text-center lg:px-8 lg:py-8">
+        <h3 class="text-lg serif tracking-wider text-gold">Biography</p>
+        <h2 class="text-black dark:text-white text-2xl leading-1 font-bold uppercase pb-8">A Celebration of Life</h2>
+        <p class="text-neutral-600 dark:text-neutral-400 text-lg serif tracking-wider pt-0 py-3">Nestor Nacario was born on July 10th in San Nicolas, Iriga, to Gregorio and Remedios Nacario, and was the second of seven siblings. After completing high school, Nestor attended UNEP, where he met and married Dolores.</p>
+        <p class="text-neutral-600 dark:text-neutral-400 text-lg serif tracking-wider py-3">Nestor was a dedicated member of the Members Church of God International. He also served his community as a former barangay tanod. Throughout his life, he took pride in his role within the community.</p>
+        <p class="text-neutral-600 dark:text-neutral-400 text-lg serif tracking-wider py-3">Nestor's passions included playing billiards, and, of course, drinking with friends. His devotion was clear in the way he always made time to enjoy life.</p>
+        <p class="text-neutral-600 dark:text-neutral-400 text-lg serif tracking-wider py-3">Nestor is survived by his sister, Nene; his brother, Fabian; his two sons, Junior and Maria, and their spouses; as well as his two grandkids: Boboy and Crispin.</p>
+      </div>
+    </div>
+    <div class="w-full max-w-2xl mx-auto pt-0 px-6 py-24">
+      <div class="mx-auto flex flex-col gap-1 text-center lg:px-8 lg:py-8">
+        <h3 class="text-lg serif tracking-wider text-gold">Media Gallery</p>
+        <h2 class="text-black dark:text-white text-2xl leading-1 font-bold uppercase pb-12">Captured Moments</h2>
+
+        <!-- Image Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+          <a class="group block relative overflow-hidden rounded-lg" href="#">
+            <img class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800" src="https://images.unsplash.com/photo-1643582817290-3626123e3871?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RyZWV0JTIwcGhpbGlwcGluZXN8ZW58MHx8MHx8fDA%3D" alt="Project">
+            <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+              <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+                <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <span class="text-xs">View</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="group block relative overflow-hidden rounded-lg" href="#">
+            <img class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800" src="https://images.unsplash.com/photo-1611078261946-0341b5fd8395?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c3RyZWV0JTIwcGhpbGlwcGluZXN8ZW58MHx8MHx8fDA%3D" alt="Project">
+            <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+              <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+                <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <span class="text-xs">View</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="group block relative overflow-hidden rounded-lg" href="#">
+            <img class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800" src="https://images.unsplash.com/photo-1611078261890-c185bc4cabb3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3RyZWV0JTIwcGhpbGlwcGluZXN8ZW58MHx8MHx8fDA%3D" alt="Project">
+            <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+              <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+                <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <span class="text-xs">View</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="group block relative overflow-hidden rounded-lg" href="#">
+            <img class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800" src="https://images.unsplash.com/photo-1674484358431-7af5a088e548?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHN0cmVldCUyMHBoaWxpcHBpbmVzfGVufDB8fDB8fHww" alt="Project">
+            <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+              <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+                <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <span class="text-xs">View</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="group block relative overflow-hidden rounded-lg" href="#">
+            <img class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800" src="https://images.unsplash.com/photo-1586404194389-30e37da6dc14?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHN0cmVldCUyMHBoaWxpcHBpbmVzfGVufDB8fDB8fHww" alt="Project">
+            <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+              <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+                <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <span class="text-xs">View</span>
+              </div>
+            </div>
+          </a>
+
+          <a class="group block relative overflow-hidden rounded-lg" href="#">
+            <img class="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800" src="https://images.unsplash.com/photo-1588827054907-d478fcd961e6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fHN0cmVldCUyMHBoaWxpcHBpbmVzfGVufDB8fDB8fHww" alt="Project">
+            <div class="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
+              <div class="flex items-center gap-x-1 py-1 px-2 bg-white border border-gray-200 text-gray-800 rounded-lg dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+                <svg class="shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <span class="text-xs">View</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- End Image Grid -->
+
+      </div>
+    </div>
+    <div class="w-full max-w-2xl mx-auto pt-0 px-6 py-24">
+      <div class="mx-auto flex flex-col gap-1 text-center lg:px-8 lg:py-8">
+        <h3 class="text-lg serif tracking-wider text-neutral-600">Powered by</p>
+        <a href="#"><img src="wordmark.svg" class="h-12 w-auto mx-auto mt-2"></a>
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- JS Implementing Plugins -->
+
+  <!-- JS PLUGINS -->
+  <script src="https://cdn.jsdelivr.net/npm/preline/dist/index.js"></script>
+
+</body>
+</html>
