@@ -41,3 +41,9 @@ body.network,
 .network .far-left {
 	background: var(--brand-red);
 }
+
+@media (max-width: 1025px) {
+	.network .logo {
+		top: 30px;
+	}
+}
