@@ -42,6 +42,10 @@ body.network,
 	background: var(--brand-red);
 }
 
+.network .ticker {
+	display: block !important;
+}
+
 @media (max-width: 1025px) {
 	.network .logo {
 		top: 30px;
