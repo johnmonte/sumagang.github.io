@@ -94,21 +94,21 @@
 				<section id="section1">
 					<a onclick="scrollSmoothTo('section2')" class="arrow__btn left-arrow">‹</a>
 					<div class="item">
-						<a href="?pl=PLBBJAlV7wxvW8q7huPfExb2sz5U7gfvMT" onclick="changeLogo('img/monte-cinema.svg')">
+						<a href="?pl=PLBBJAlV7wxvW8q7huPfExb2sz5U7gfvMT&ch=cinema" onclick="changeLogo('img/monte-cinema.svg')">
 							<img src="img/th-cinema.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
 						</a>
 					</div>
 					<div class="item">
-						<a href="#" onclick="changeLogo('img/monte-junior.svg')">
+						<a href="?pl=PLBBJAlV7wxvVabbDaiRI-W9w-pqK1ADsg&ch=junior" onclick="changeLogo('img/monte-junior.svg')">
 							<img src="img/th-junior.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
 						</a>
 					</div>
 					<div class="item">
-						<a href="?pl=PLBBJAlV7wxvXzjUzogSJGrN4dY52Sq4wd" onclick="changeLogo('img/monte-classics.svg')">
+						<a href="?pl=PLBBJAlV7wxvXzjUzogSJGrN4dY52Sq4wd&ch=classics" onclick="changeLogo('img/monte-classics.svg')">
 							<img src="img/th-classics.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
@@ -126,21 +126,21 @@
 				<section id="section2">
 					<a onclick="scrollSmoothTo('section1')" class="arrow__btn left-arrow">‹</a>
 					<div class="item">
-						<a href="?pl=PLBBJAlV7wxvW8q7huPfExb2sz5U7gfvMT" onclick="changeLogo('img/monte-cinema.svg')">
+						<a href="?pl=PLBBJAlV7wxvW8q7huPfExb2sz5U7gfvMT&ch=cinema" onclick="changeLogo('img/monte-cinema.svg')">
 							<img src="img/th-cinema.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
 						</a>
 					</div>
 					<div class="item">
-						<a href="#" onclick="changeLogo('img/monte-junior.svg')">
+						<a href="?pl=PLBBJAlV7wxvVabbDaiRI-W9w-pqK1ADsg&ch=junior" onclick="changeLogo('img/monte-junior.svg')">
 							<img src="img/th-junior.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
 						</a>
 					</div>
 					<div class="item">
-						<a href="?pl=PLBBJAlV7wxvXzjUzogSJGrN4dY52Sq4wd" onclick="changeLogo('img/monte-classics.svg')">
+						<a href="?pl=PLBBJAlV7wxvXzjUzogSJGrN4dY52Sq4wd&ch=classics" onclick="changeLogo('img/monte-classics.svg')">
 							<img src="img/th-classics.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
@@ -192,6 +192,21 @@
 		function changeLogo(src) {
 			document.getElementById("logo").src = src;
 		}
+
+		window.addEventListener("load", function() {
+			const params = new URLSearchParams(window.location.search);
+			const channel = params.get("ch");
+
+			const logos = {
+				"cinema": "img/monte-cinema.png",
+				"junior": "img/monte-junior.png",
+				"classics": "img/monte-classics.png"
+			};
+
+			if (logos[channel]) {
+				document.getElementById("logo").src = logos[channel];
+			}
+		});
 	</script>
 </body>
 
