@@ -94,21 +94,21 @@
 				<section id="section1">
 					<a onclick="scrollSmoothTo('section2')" class="arrow__btn left-arrow">‹</a>
 					<div class="item">
-						<a href="#" onclick="monteCinema">
+						<a href="#" onclick="changeLogo('monte-cinema.svg')">
 							<img src="img/th-cinema.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
 						</a>
 					</div>
 					<div class="item">
-						<a href="#" onclick="monteJunior">
+						<a href="#" onclick="changeLogo('monte-junior.svg')">
 							<img src="img/th-junior.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
 						</a>
 					</div>
 					<div class="item">
-						<a href="#" onclick="monteClassics">
+						<a href="#" onclick="changeLogo('monte-classics.svg')">
 							<img src="img/th-classics.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
@@ -126,21 +126,21 @@
 				<section id="section2">
 					<a onclick="scrollSmoothTo('section1')" class="arrow__btn left-arrow">‹</a>
 					<div class="item">
-						<a href="#" onclick="monteCinema">
+						<a href="#" onclick="changeLogo('monte-cinema.svg')">
 							<img src="img/th-cinema.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
 						</a>
 					</div>
 					<div class="item">
-						<a href="#" onclick="monteJunior">
+						<a href="#" onclick="changeLogo('monte-junior.svg')">
 							<img src="img/th-junior.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
 						</a>
 					</div>
 					<div class="item">
-						<a href="#" onclick="monteClassics">
+						<a href="#" onclick="changeLogo('monte-classics.svg')">
 							<img src="img/th-classics.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
@@ -189,14 +189,8 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="js/end.min.js"></script>
 	<script>
-		function monteCinema() {
-			document.getElementById("logo").src = "img/monte-cinema.svg";
-		}
-		function monteJunior() {
-			document.getElementById("logo").src = "img/monte-junior.svg";
-		}
-		function monteClassics() {
-			document.getElementById("logo").src = "img/monte-classics.svg";
+		function changeLogo() {
+			document.getElementById("logo").src = src;
 		}
 	</script>
 </body>
