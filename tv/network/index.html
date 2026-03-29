@@ -56,7 +56,7 @@
 		</svg>
 	</div>
 	<div id="resume"></div>
-	<div class="nwlogo upperright"><a href="/tv/network"><img src="img/logo-network.svg" alt="" style="height: 100px;"></a></div>
+	<div class="nwlogo upperright"><a href="/tv/network"><img src="img/monte-cinema.svg" alt="" style="height: 90px;" id="logo"></a></div>
 	<div class="main opacity-full">
 		<ul class="menu uppernav">
 			<li><a id="explore">Channels<span id="expand" class="expand material-symbols-rounded">expand_more</span></a>
@@ -94,22 +94,22 @@
 				<section id="section1">
 					<a onclick="scrollSmoothTo('section2')" class="arrow__btn left-arrow">‹</a>
 					<div class="item">
-						<a href="#">
-							<img src="img/th-soon.png" alt="">
+						<a href="?pl=PLBBJAlV7wxvW8q7huPfExb2sz5U7gfvMT&ch=cinema" onclick="changeLogo('img/monte-cinema.svg')">
+							<img src="img/th-cinema.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
 						</a>
 					</div>
 					<div class="item">
-						<a href="#">
-							<img src="img/th-soon.png" alt="">
+						<a href="?pl=PLBBJAlV7wxvVabbDaiRI-W9w-pqK1ADsg&ch=junior" onclick="changeLogo('img/monte-junior.svg')">
+							<img src="img/th-junior.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
 						</a>
 					</div>
 					<div class="item">
-						<a href="#">
-							<img src="img/th-soon.png" alt="">
+						<a href="?pl=PLBBJAlV7wxvXzjUzogSJGrN4dY52Sq4wd&ch=classics" onclick="changeLogo('img/monte-classics.svg')">
+							<img src="img/th-classics.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
 						</a>
@@ -126,22 +126,22 @@
 				<section id="section2">
 					<a onclick="scrollSmoothTo('section1')" class="arrow__btn left-arrow">‹</a>
 					<div class="item">
-						<a href="#">
-							<img src="img/th-soon.png" alt="">
+						<a href="?pl=PLBBJAlV7wxvW8q7huPfExb2sz5U7gfvMT&ch=cinema" onclick="changeLogo('img/monte-cinema.svg')">
+							<img src="img/th-cinema.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
 						</a>
 					</div>
 					<div class="item">
-						<a href="#">
-							<img src="img/th-soon.png" alt="">
+						<a href="?pl=PLBBJAlV7wxvVabbDaiRI-W9w-pqK1ADsg&ch=junior" onclick="changeLogo('img/monte-junior.svg')">
+							<img src="img/th-junior.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
 						</a>
 					</div>
 					<div class="item">
-						<a href="#">
-							<img src="img/th-soon.png" alt="">
+						<a href="?pl=PLBBJAlV7wxvXzjUzogSJGrN4dY52Sq4wd&ch=classics" onclick="changeLogo('img/monte-classics.svg')">
+							<img src="img/th-classics.png" alt="">
 							<span class="heading"></span>
 							<span class="subtext"></span>
 						</a>
@@ -188,6 +188,26 @@
 		integrity="sha512-JHJv/L48s1Hod24iSI0u9bcF/JlUi+YaxliKdbasnw/U1Lp9xxWkaZ3O5OuQPMkVwOVXeFkF4n4176ouA6Py3A=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="js/end.min.js"></script>
+	<script>
+		function changeLogo(src) {
+			document.getElementById("logo").src = src;
+		}
+
+		window.addEventListener("load", function() {
+			const params = new URLSearchParams(window.location.search);
+			const channel = params.get("ch");
+
+			const logos = {
+				"cinema": "img/monte-cinema.svg",
+				"junior": "img/monte-junior.svg",
+				"classics": "img/monte-classics.svg"
+			};
+
+			if (logos[channel]) {
+				document.getElementById("logo").src = logos[channel];
+			}
+		});
+	</script>
 </body>
 
 </html>

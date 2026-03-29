@@ -47,6 +47,8 @@ body.network,
 	bottom: 0 !important;
 	left: 0 !important;
 	right: 0 !important;
+	font-size: 13px !important;
+	isolation: isolate !important;
 }
 
 @media (max-width: 1025px) {
