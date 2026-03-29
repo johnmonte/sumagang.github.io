@@ -1,0 +1,62 @@
+:root {
+	--brand-red: #FF5532;
+}
+
+body.network,
+.network.carousel .wrapper section .arrow__btn {
+    font-family: 'Inter', sans-serif;
+}
+
+.network .nwlogo {
+	z-index: 4;
+	margin: 0;
+height: auto;
+	opacity: 1;
+	transition: .5s ease;
+	overflow: hidden;
+top: 40px;
+}
+
+.network .nwlogo span {
+	position: absolute;
+	top: -10px;
+	margin-left: 4px;
+	font-size: 8px;
+	text-transform: uppercase;
+}
+
+.network .nwlogo img {
+	height: 100px;
+	padding: 1px 0;
+	/* using padding reduce image height to changing the value of height property */
+}
+
+.network ul.uppernav {
+    left: 30px;
+}
+
+.network ul.menu li a.active {
+	color: var(--brand-red);
+}
+
+.network #progressbar {
+	background-color: var(--brand-red);
+	color: var(--brand-red);
+}
+
+.network input[type=range]::-webkit-slider-thumb {
+    background: var(--brand-red);
+}
+
+.network input[type=range]::-moz-range-thumb {
+	border: 1px solid var(--brand-red);
+	background: var(--brand-red);
+}
+
+.network .button.audio {
+	color: var(--brand-red);
+}
+
+.network .far-left {
+	background: var(--brand-red);
+}
