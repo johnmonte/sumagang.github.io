@@ -26,7 +26,7 @@ top: 40px;
 }
 
 .network .nwlogo img {
-	height: 100px;
+	height: 90px;
 	padding: 1px 0;
 	/* using padding reduce image height to changing the value of height property */
 }
@@ -59,4 +59,9 @@ top: 40px;
 
 .network .far-left {
 	background: var(--brand-red);
+}
+
+.network .marquee {
+	font-size: 13px;
+	isolation: isolate;
 }
